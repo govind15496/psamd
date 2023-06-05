@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  DeleteOutlined,
+  DeleteFilled,
   EditOutlined,
   GlobalOutlined,
   HeartFilled,
@@ -89,6 +89,7 @@ const UserList = () => {
               key={user.id}
               style={{
                 width: 340,
+                borderWidth: "2px",
               }}
               cover={
                 <img
@@ -123,7 +124,7 @@ const UserList = () => {
                   style={{ fontSize: "1.4em" }}
                   onClick={() => handleEdit(user)}
                 />,
-                <DeleteOutlined
+                <DeleteFilled
                   style={{ fontSize: "1.4em" }}
                   onClick={() => handleDelete(user.id)}
                 />,
