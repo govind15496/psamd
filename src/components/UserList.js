@@ -88,14 +88,14 @@ const UserList = () => {
             <Card
               key={user.id}
               style={{
-                width: 350,
+                width: 340,
               }}
               cover={
                 <img
                   className="card-containerImage"
                   style={{
                     width: "100%",
-                    height: "200px",
+                    height: "13em",
                     maxWidth: "100%",
                     maxHeight: "100%",
                     backgroundColor: "#f5f5f5",
@@ -114,27 +114,39 @@ const UserList = () => {
                   <HeartOutlined
                     style={{
                       color: "red",
-                      fontSize: "20px",
+                      fontSize: "1.4em",
                     }}
                     onClick={() => handleLike(user.id)}
                   />
                 ),
-                <EditOutlined onClick={() => handleEdit(user)} />,
-                <DeleteOutlined onClick={() => handleDelete(user.id)} />,
+                <EditOutlined
+                  style={{ fontSize: "1.4em" }}
+                  onClick={() => handleEdit(user)}
+                />,
+                <DeleteOutlined
+                  style={{ fontSize: "1.4em" }}
+                  onClick={() => handleDelete(user.id)}
+                />,
               ]}
             >
               <div className="info">
                 <h2>{user.name}</h2>
                 <div className="info__">
-                  <MailOutlined style={{ paddingRight: "0.5em" }} />
+                  <MailOutlined
+                    style={{ fontSize: "1.3em", paddingRight: "0.5em" }}
+                  />
                   <p>{user.email}</p>
                 </div>
                 <div className="info__">
-                  <PhoneOutlined style={{ paddingRight: "0.5em" }} />
+                  <PhoneOutlined
+                    style={{ fontSize: "1.3em", paddingRight: "0.5em" }}
+                  />
                   <p>{user.phone}</p>
                 </div>
                 <div className="info__">
-                  <GlobalOutlined style={{ paddingRight: "0.5em" }} />
+                  <GlobalOutlined
+                    style={{ fontSize: "1.3em", paddingRight: "0.5em" }}
+                  />
                   <p>{user.website}</p>
                 </div>
               </div>
