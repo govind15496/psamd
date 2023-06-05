@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 1em;
 }
 
 .card {
@@ -66,12 +67,5 @@
   }
   40% {
     transform: scale(1);
-  }
-}
-
-@media (max-width: 992px) {
-  /* For smaller screens */
-  .card {
-    width: 18em; /* Reset the width for smaller screens */
   }
 }
