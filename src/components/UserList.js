@@ -88,7 +88,7 @@ const UserList = () => {
             <Card
               key={user.id}
               style={{
-                width: 340,
+                width: 300,
                 borderWidth: "2px",
               }}
               cover={

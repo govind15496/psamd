@@ -3,21 +3,25 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1em;
 }
 
 .card {
   width: 20em;
-  margin: 0.5em;
 }
 
 .ant-card {
-  margin: 0.5em;
+  margin: 1em 1em;
   flex: 1 0 20em;
 }
 
 .ant-card-body {
   margin-top: 0;
+}
+
+@media (max-width: 300px) {
+  .card {
+    width: 10em;
+  }
 }
 
 .info .info__ {
