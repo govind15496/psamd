@@ -86,6 +86,7 @@ const UserList = () => {
         <div className="card-container">
           {users.map((user) => (
             <Card
+              className="custom-card"
               key={user.id}
               style={{
                 width: 300,
@@ -93,7 +94,7 @@ const UserList = () => {
               }}
               cover={
                 <img
-                  className="card-containerImage"
+                  className="card-container"
                   style={{
                     width: "100%",
                     height: "13em",
@@ -108,7 +109,7 @@ const UserList = () => {
               actions={[
                 user.liked ? (
                   <HeartFilled
-                    style={{ color: "red", fontSize: "20px" }}
+                    style={{ color: "red", fontSize: "1.4em" }}
                     onClick={() => handleLike(user.id)}
                   />
                 ) : (
